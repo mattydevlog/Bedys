@@ -14,6 +14,8 @@ class BEDYS_API ABasePickup : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ABasePickup();
+protected:
+	UStaticMeshComponent* StaticMeshComponent;
 
 protected:
 	// Called when the game starts or when spawned

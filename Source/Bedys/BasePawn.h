@@ -15,6 +15,11 @@ public:
 	// Sets default values for this pawn's properties
 	ABasePawn();
 
+
+private:
+	UPROPERTY(EditDefaultsOnly)
+	UStaticMeshComponent* StaticMeshComponent;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
