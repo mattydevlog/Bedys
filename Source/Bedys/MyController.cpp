@@ -3,3 +3,9 @@
 
 #include "MyController.h"
 
+void AMyController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
+
+	//InputComponent->BindAxis("MoveForward", this, & )
+}

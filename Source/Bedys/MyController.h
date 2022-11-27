@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "BasePawn.h"
 #include "MyController.generated.h"
 
 /**
@@ -14,4 +15,6 @@ class BEDYS_API AMyController : public APlayerController
 {
 	GENERATED_BODY()
 	
+private:
+	void SetupInputComponent();
 };

@@ -4,6 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+
+
+
+#include "Camera/CameraComponent.h"
+
 #include "BasePawn.generated.h"
 
 UCLASS()
@@ -18,7 +23,17 @@ public:
 
 private:
 	UPROPERTY(EditDefaultsOnly)
-	UStaticMeshComponent* StaticMeshComponent;
+	class UCapsuleComponent* CapsuleComponent;
+	UPROPERTY(EditDefaultsOnly)
+		UStaticMeshComponent* StaticMeshComponent;
+
+	UPROPERTY(EditDefaultsOnly)
+		class USpringArmComponent* SpringArmComponent;
+
+	UPROPERTY(EditDefaultsOnly)
+		UCameraComponent* CameraComponent;
+	void HandleAttachments();
+
 
 protected:
 	// Called when the game starts or when spawned
