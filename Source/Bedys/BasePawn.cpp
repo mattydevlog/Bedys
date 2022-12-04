@@ -1,9 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Components/CapsuleComponent.h"
 
-
-#include "GameFramework/SpringArmComponent.h"
 #include "BasePawn.h"
 
 // Sets default values
@@ -27,7 +24,10 @@ ABasePawn::ABasePawn()
 void ABasePawn::BeginPlay()
 {
 	Super::BeginPlay();
+
 	HandleAttachments();
+	
+
 }
 
 // Called every frame
@@ -43,7 +43,6 @@ void ABasePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-
 
 //Handles Attachments of Components
 void ABasePawn::HandleAttachments() 

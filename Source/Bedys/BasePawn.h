@@ -4,10 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-
-
-
+#include "MyController.h"
 #include "Camera/CameraComponent.h"
+#include "Components/InputComponent.h"
+#include "Components/CapsuleComponent.h"
+
+
+
+#include "GameFramework/SpringArmComponent.h"
 
 #include "BasePawn.generated.h"
 
@@ -22,8 +26,11 @@ public:
 
 
 private:
+	
+	
 	UPROPERTY(EditDefaultsOnly)
 	class UCapsuleComponent* CapsuleComponent;
+	
 	UPROPERTY(EditDefaultsOnly)
 		UStaticMeshComponent* StaticMeshComponent;
 
@@ -32,6 +39,7 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 		UCameraComponent* CameraComponent;
+	
 	void HandleAttachments();
 
 
